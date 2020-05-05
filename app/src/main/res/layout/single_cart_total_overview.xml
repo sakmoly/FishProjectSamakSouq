@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_vertical_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_total_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:text="@string/label_cart_total_over_view"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_14sdp"
+        app:font_name="MontserratBold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_cart_sub_total_key"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/label_cart_sub_total"
+        android:textColor="@android:color/black"
+        app:font_name="MontserratMedium"
+        app:layout_constraintEnd_toStartOf="@+id/gl_vertical_total"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_total_header" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_sub_total_hyphan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/label_cart_hyphan"
+        android:textColor="@android:color/black"
+        app:font_name="MontserratMedium"
+        app:layout_constraintStart_toStartOf="@+id/gl_vertical_total"
+        app:layout_constraintTop_toBottomOf="@+id/tv_total_header" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_cart_subtotal_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        android:textColor="@android:color/black"
+        app:font_name="MontserratMedium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_sub_total_hyphan"
+        app:layout_constraintTop_toBottomOf="@+id/tv_total_header"
+        tools:text="1000" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_cart_coupon_key"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/label_cart_coupon"
+        android:textColor="@android:color/black"
+        app:font_name="MontserratMedium"
+        app:layout_constraintEnd_toStartOf="@+id/gl_vertical_total"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cart_sub_total_key" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_coupon_hyphan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/label_cart_hyphan"
+        android:textColor="@android:color/black"
+        app:font_name="MontserratMedium"
+        app:layout_constraintStart_toStartOf="@+id/gl_vertical_total"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sub_total_hyphan" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_cart_coupon_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        android:textColor="@android:color/black"
+        app:font_name="MontserratMedium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_sub_total_hyphan"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cart_subtotal_value"
+        tools:text="1000" />
+
+    <android.support.constraint.Group
+        android:id="@+id/group_delivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="tv_cart_delivery_key, tv_delivery_hyphan, tv_cart_delivery_value " />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_cart_delivery_key"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/label_cart_delivery"
+        android:textColor="@android:color/black"
+        app:font_name="MontserratMedium"
+        app:layout_constraintEnd_toStartOf="@+id/gl_vertical_total"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cart_coupon_key" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_delivery_hyphan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/label_cart_hyphan"
+        android:textColor="@android:color/black"
+        app:font_name="MontserratMedium"
+        app:layout_constraintStart_toStartOf="@+id/gl_vertical_total"
+        app:layout_constraintTop_toBottomOf="@+id/tv_coupon_hyphan" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_cart_delivery_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        android:textColor="@android:color/black"
+        app:font_name="MontserratMedium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_sub_total_hyphan"
+        app:layout_constraintTop_toBottomOf="@+id/tv_coupon_hyphan"
+        tools:text="1000" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_cart_total_key"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/label_cart_total"
+        android:textColor="@android:color/black"
+        app:font_name="MontserratMedium"
+        app:layout_constraintEnd_toStartOf="@+id/gl_vertical_total"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cart_delivery_key" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_total_hyphan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/label_cart_hyphan"
+        android:textColor="@android:color/black"
+        app:font_name="MontserratMedium"
+        app:layout_constraintStart_toStartOf="@+id/gl_vertical_total"
+        app:layout_constraintTop_toBottomOf="@+id/tv_delivery_hyphan" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_cart_total_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        android:textColor="@android:color/black"
+        app:font_name="MontserratMedium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_sub_total_hyphan"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cart_delivery_value"
+        tools:text="1000" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_cart_total_delivery_fee_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        app:font_name="MontserratRegular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cart_total_key"
+        tools:text="@string/label_free_delivery_eligible" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_cart_total_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        app:font_name="MontserratLight"
+        android:textColor="@android:color/black"
+        android:text="@string/total_info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cart_total_delivery_fee_info" />
+
+</android.support.constraint.ConstraintLayout>

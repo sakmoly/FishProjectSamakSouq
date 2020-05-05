@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_8sdp">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.69" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_cart_total"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_coupon_discount"
+        app:layout_constraintEnd_toStartOf="@+id/gl_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_coupon_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:textAllCaps="true"
+        android:textSize="@dimen/_16sdp"
+        app:font_name="MontserratSemiBold"
+        app:layout_constraintEnd_toStartOf="@+id/gl_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Coupon Code" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_coupon_discount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_12sdp"
+        app:font_name="MontserratRegular"
+        app:layout_constraintEnd_toStartOf="@+id/gl_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_coupon_code"
+        tools:text="Flat 10% off on first purchase" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_coupon_apply"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:background="@drawable/bg_apply_coupon"
+        android:gravity="center"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingBottom="@dimen/_4sdp"
+        android:text="@string/label_coupon_apply"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_12sdp"
+        app:font_name="MontserratBold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gl_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/tv_coupon_code"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Apply" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toast_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_toast_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_toast"
+        android:gravity="center"
+        app:font_name="MontserratMedium"
+        android:padding="@dimen/_16sdp"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@android:color/white" />
+
+</FrameLayout>

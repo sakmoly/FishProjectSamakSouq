@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_order_date"
+    android:padding="@dimen/_8sdp"
+    android:layout_margin="@dimen/_4sdp">
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_order_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_order_id"
+        android:padding="@dimen/_8sdp"
+        android:textAllCaps="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@android:color/white"
+        app:font_name="MontserratExtraBold"
+        tools:text="Order ID" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_order_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="23 Mar 2019"
+        app:font_name="MontserratLight"
+        android:textColor="@android:color/black"
+        android:padding="@dimen/_8sdp"
+        android:visibility="invisible"
+        android:background="@drawable/bg_order_date"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_order_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Pending"
+        app:font_name="MontserratLight"
+        android:textColor="@android:color/black"
+        android:padding="@dimen/_8sdp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

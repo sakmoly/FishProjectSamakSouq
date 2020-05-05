@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_quick_view_main"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="QuickView"
+        android:padding="@dimen/_12sdp"
+        android:textSize="@dimen/_16sdp"
+        android:textColor="@android:color/black"
+        app:font_name="MontserratBold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/graylight"
+        app:layout_constraintTop_toBottomOf="@+id/tv_quick_view_main"/>
+</android.support.constraint.ConstraintLayout>

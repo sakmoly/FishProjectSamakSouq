@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_order_total_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_summary_total_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_12sdp"
+        android:textColor="@android:color/black"
+        android:text="@string/label_summary_total_header"
+        app:font_name="MontserratBold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_order_total_shipment_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:text="@string/label_order_shipment_charge"
+        app:font_name="MontserratSemiBold"
+        app:layout_constraintEnd_toStartOf="@+id/gl_order_total_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_summary_total_header" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_order_total_shipment_hyphan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_8sdp"
+        android:text="@string/label_cart_hyphan"
+        app:font_name="MontserratSemiBold"
+        app:layout_constraintStart_toEndOf="@+id/gl_order_total_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/tv_summary_total_header" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_order_total_shipment_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        app:font_name="MontserratSemiBold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_order_total_shipment_hyphan"
+        app:layout_constraintTop_toBottomOf="@+id/tv_summary_total_header"
+        tools:text="@string/label_order_summary_weight" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_order_total_grand_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_12sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:text="@string/label_order_total"
+        app:font_name="MontserratSemiBold"
+        app:layout_constraintEnd_toStartOf="@+id/gl_order_total_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_order_total_shipment_header" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_order_total_grand_hyphan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:text="@string/label_cart_hyphan"
+        app:font_name="MontserratSemiBold"
+        app:layout_constraintStart_toEndOf="@+id/gl_order_total_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/tv_order_total_shipment_header" />
+
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_order_total_grand_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        app:font_name="MontserratSemiBold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_order_total_grand_hyphan"
+        app:layout_constraintTop_toBottomOf="@+id/tv_order_total_shipment_header"
+        tools:text="@string/label_order_summary_finish" />
+
+</android.support.constraint.ConstraintLayout>

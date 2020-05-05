@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_8sdp"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_banner"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <qa.happytots.yameenhome.components.RoundedPagerIndicator
+        android:id="@+id/indicator_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:padding="10dip"
+        app:autoScroll="true"
+        app:barWidth="@dimen/_16sdp"
+        app:barHeight="@dimen/_4sdp"
+        app:indicatorSpacing="@dimen/_4sdp"
+        app:selectedRoundColor="@color/Yellow"
+        app:deselectedRoundColor="@color/gray" />
+
+</LinearLayout>

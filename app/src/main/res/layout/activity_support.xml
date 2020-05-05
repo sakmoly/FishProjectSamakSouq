@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.ui.activities.Support">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_support"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/Yellow"
+        android:theme="@style/ToolbarTheme"
+        app:title="@string/label_toolbar_support"
+        app:titleTextColor="@android:color/white" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I want to raise a compliant"
+        android:padding="@dimen/_12sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        app:font_name="MontserratRegular"
+        android:fontFamily="sans-serif-condensed" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FAQ"
+        android:padding="@dimen/_12sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        app:font_name="MontserratRegular"
+        android:fontFamily="sans-serif-condensed" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Terms and Conditions"
+        android:padding="@dimen/_12sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        app:font_name="MontserratRegular"
+        android:fontFamily="sans-serif-condensed" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Privacy Policy"
+        android:padding="@dimen/_12sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        app:font_name="MontserratRegular"
+        android:fontFamily="sans-serif-condensed" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:padding="@dimen/_12sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        app:font_name="MontserratRegular"
+        android:fontFamily="sans-serif-condensed"  />
+
+</LinearLayout>

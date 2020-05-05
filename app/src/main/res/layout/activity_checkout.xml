@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.activities.CheckoutActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_checkout"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/Yellow"
+        android:theme="@style/ToolbarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/label_title_checkout"
+        app:titleTextColor="@android:color/white"/>
+
+
+    <qa.happytots.yameenhome.components.StepView
+        android:id="@+id/sv_checkout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingStart="@dimen/_12sdp"
+        android:paddingEnd="@dimen/_12sdp"
+        app:selectedCircleColor="@color/Yellow"
+        app:selectedTextColor="@color/Yellow"
+        app:stepLineWidth="@dimen/_2sdp"
+        app:stepPadding="@dimen/_4sdp"
+        app:nextTextColor="@color/gray"
+        app:nextStepLineColor="@color/gray"
+        app:doneCircleColor="@color/Yellow"
+        app:doneStepLineColor="@color/Yellow"
+        app:doneCircleRadius="@dimen/_10sdp"
+        app:selectedCircleRadius="@dimen/_12sdp"
+        app:selectedStepNumberColor="@color/Yellow"
+        app:stepViewStyle="@style/StepView"
+        app:doneStepMarkColor="@color/colorPrimary"
+        app:stepNumberTextSize="@dimen/_12sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_checkout"/>
+
+    <!--<View-->
+        <!--android:id="@+id/divider"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="@dimen/_1sdp"-->
+        <!--android:layout_marginTop="@dimen/_16sdp"-->
+        <!--android:background="@color/graylight"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/tv_checkout_delivery" />-->
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_checkout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sv_checkout" />
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/rv_delivery_address"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:paddingTop="@dimen/_16sdp"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/tv_checkout_continue"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/tv_delivery_address" />-->
+
+</android.support.constraint.ConstraintLayout>

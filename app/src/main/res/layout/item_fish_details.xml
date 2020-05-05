@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/_8sdp">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_fish_landscape_image"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_140sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_fish_detail_discount_ribbon"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gl_fish_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_fish_landscape_image"
+        app:srcCompat="@drawable/ic_discount_ribbon"/>
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_fish_detail_ribbon_discount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:font_name="MontserratBold"
+        android:text="15% Offer"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_14sdp"
+        android:paddingStart="@dimen/_24sdp"
+        app:layout_constraintTop_toTopOf="@+id/iv_fish_detail_discount_ribbon"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_fish_detail_discount_ribbon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gl_fish_vertical"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        android:id="@+id/gl_fish_vertical"/>
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_fish_details_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:maxLines="1"
+        android:layout_marginEnd="@dimen/_8sdp"
+        app:font_name="MontserratSemiBold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_fish_landscape_image"
+        tools:text="SURDYAN" />
+
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_fish_details_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/label_fish_details_select_fish"
+        android:textSize="@dimen/_10sdp"
+        app:font_name="MontserratBold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fish_details_name" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_fish_details_close"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_margin="@dimen/_8sdp"
+        android:padding="@dimen/_4sdp"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_fish_details_heading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_fish_details_heading" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_fish_details_size_filter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:padding="@dimen/_8sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_fish_details_close" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_fish_details_quantity_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:paddingStart="@dimen/_8sdp"
+        android:text="@string/label_fish_details_quantity_heading"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:textSize="@dimen/_10sdp"
+        app:font_name="MontserratBold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_fish_details_size_filter" />
+
+    <qa.happytots.yameenhome.components.QuantityLayout
+        android:id="@+id/ql_one_kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fish_details_quantity_heading"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ql_two_kg"
+        app:Quantity="1"
+        app:type="type_underline"/>
+
+    <qa.happytots.yameenhome.components.QuantityLayout
+        android:id="@+id/ql_two_kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fish_details_quantity_heading"
+        app:layout_constraintStart_toEndOf="@+id/ql_one_kg"
+        app:layout_constraintEnd_toStartOf="@+id/ql_three_kg"
+        app:Quantity="2"
+        app:type="type_underline"/>
+
+    <qa.happytots.yameenhome.components.QuantityLayout
+        android:id="@+id/ql_three_kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fish_details_quantity_heading"
+        app:layout_constraintStart_toEndOf="@+id/ql_two_kg"
+        app:layout_constraintEnd_toStartOf="@+id/ql_four_kg"
+        app:Quantity="3"
+        app:type="type_underline"/>
+
+    <qa.happytots.yameenhome.components.QuantityLayout
+        android:id="@+id/ql_four_kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fish_details_quantity_heading"
+        app:layout_constraintStart_toEndOf="@+id/ql_three_kg"
+        app:layout_constraintEnd_toStartOf="@+id/ql_five_kg"
+        app:Quantity="4"
+        app:type="type_underline"/>
+
+    <qa.happytots.yameenhome.components.QuantityLayout
+        android:id="@+id/ql_five_kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fish_details_quantity_heading"
+        app:layout_constraintStart_toEndOf="@+id/ql_four_kg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:Quantity="5"
+        app:type="type_underline"/>
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_fish_details_add_to_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@drawable/rectangle_yellow1"
+        android:paddingStart="@dimen/_24sdp"
+        android:paddingTop="@dimen/_6sdp"
+        android:paddingEnd="@dimen/_24sdp"
+        android:paddingBottom="@dimen/_6sdp"
+        android:text="@string/label_fish_details_add_to_cart"
+        android:gravity="center"
+        app:font_name="MontserratSemiBold"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_fish_details_display_amount"
+        app:layout_constraintTop_toTopOf="@+id/tv_fish_details_currency" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_fish_details_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ql_one_kg"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="@string/label_currency_aed"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingEnd="0dp"
+        android:textSize="@dimen/_12sdp"
+        app:font_name="MontserratLight"/>
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_fish_details_display_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="2.50"
+        android:paddingStart="@dimen/_16sdp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:textSize="@dimen/_20sdp"
+        app:font_name="MontserratLight"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_fish_details_add_to_cart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fish_details_currency" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_fish_details_original_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingStart="@dimen/_8sdp"
+        app:font_name="MontserratLight"
+        tools:text="3.00"
+        android:textColor="@color/gray"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_fish_details_display_amount"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_fish_details_add_to_cart"
+        app:layout_constraintEnd_toStartOf="@+id/tv_fish_details_add_to_cart"
+        app:layout_constraintStart_toEndOf="@+id/tv_fish_details_display_amount"
+        app:layout_constraintTop_toTopOf="@+id/tv_fish_details_add_to_cart" />
+
+    <android.support.constraint.Group
+        android:id="@+id/group_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="tv_fish_details_add_to_cart, tv_fish_details_original_value, tv_fish_details_display_amount, tv_fish_details_currency" />
+
+</android.support.constraint.ConstraintLayout>

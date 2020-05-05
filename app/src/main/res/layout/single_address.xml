@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_shipping_address_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:font_name="MontserratBold"
+        android:textColor="@android:color/black"
+        android:paddingStart="@dimen/_12sdp"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingBottom="@dimen/_4sdp"
+        android:text="@string/label_shipping_address_header"/>
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_shipping_address_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:font_name="MontserratMedium"
+        android:textColor="@android:color/black"
+        android:paddingStart="@dimen/_12sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_shipping_address_header"
+        android:paddingBottom="@dimen/_4sdp"
+        android:text="@string/label_shipping_address_header"/>
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_shipping_address_address_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:font_name="MontserratMedium"
+        android:textColor="@android:color/black"
+        android:paddingStart="@dimen/_12sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_shipping_address_name"
+        android:paddingBottom="@dimen/_4sdp"
+        android:text="@string/label_shipping_address_header"/>
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_shipping_address_address_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:font_name="MontserratMedium"
+        android:textColor="@android:color/black"
+        android:paddingStart="@dimen/_12sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_shipping_address_address_one"
+        android:paddingBottom="@dimen/_4sdp"
+        android:text="@string/label_shipping_address_header"/>
+
+</android.support.constraint.ConstraintLayout>

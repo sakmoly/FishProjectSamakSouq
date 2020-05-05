@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="qa.happytots.yameenhome.view.ui.activities.OTPActivity">
+
+    <qa.happytots.yameenhome.components.OTPView
+        android:id="@+id/otp_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:field_count="6"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/gl_eighty_horizontal"
+        app:layout_constraintGuide_percent="0.80"/>
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_otp_otp_sent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tv_otp_enter_otp"
+        app:font_name="MontserratMedium"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_16sdp" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_otp_enter_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_otp_enter_otp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/otp_view"
+        app:font_name="MontserratMedium"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_16sdp"/>
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_otp_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/gl_eighty_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/label_otp_submit"
+        app:font_name="MontserratMedium"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_14sdp"
+        android:background="@drawable/bg_otp_total"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:paddingTop="@dimen/_2sdp"
+        android:paddingBottom="@dimen/_2sdp"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_coupon_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/label_use_coupon"
+        app:font_name="MontserratBold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="@dimen/_8sdp"
+        android:layout_margin="@dimen/_8sdp"
+        android:drawableEnd="@drawable/ic_down_arrow"
+        android:background="@drawable/bg_cart_total"/>
+
+</android.support.constraint.ConstraintLayout>

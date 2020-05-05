@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="qa.happytots.yameenhome.view.ui.activities.LocationActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/Yellow"
+        android:theme="@style/ToolbarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/label_title_location"
+        app:titleTextColor="@android:color/white" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_current_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_location"
+        app:font_name="MontserratBold"
+        android:padding="@dimen/_12sdp"
+        android:background="@drawable/bg_cart_checkout"
+        android:layout_margin="@dimen/_8sdp"
+        android:drawablePadding="@dimen/_8sdp"
+        android:textColor="@android:color/white"
+        android:drawableStart="@drawable/ic_location_pointer"
+        android:text="@string/label_current_location"/>
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_choose_msg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_current_location"
+        app:font_name="MontserratBold"
+        android:padding="@dimen/_12sdp"
+        android:background="@drawable/bg_order_date"
+        android:layout_margin="@dimen/_8sdp"
+        android:drawablePadding="@dimen/_8sdp"
+        android:textColor="@android:color/darker_gray"
+        android:text="@string/label_choose_location"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_locations"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/_8sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_choose_msg"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

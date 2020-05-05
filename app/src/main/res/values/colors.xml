@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="top_bar">#00314A</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="Black">#000000</color>
+    <color name="black">#000000</color>
+    <color name="White">#ffffff</color>
+    <color name="Yellow">#e9bd10</color>
+    <color name="lightYellow">#f4cf3f</color>
+    <color name="red">#f40404</color>
+    <color name="orange">#f28226</color>
+    <color name="graylight">#e0e2e6</color>
+    <color name="graylightnew">#cae0e2e6</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="invisible">#00ffffff</color>
+    <color name="gray">#707173</color>
+    <color name="light_blue">#7ba3f4</color>
+    <color name="appcolor">#B32462</color>
+    <color name="home_bottom_color">#2D2E2C</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorGreen">#1B5E20</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="colorSplash">#0f1e33</color>
+    <color name="colorSuccessTransaction">#48BD50</color>
+
+
+</resources>

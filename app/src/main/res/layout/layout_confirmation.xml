@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_confirmation_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_12sdp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_12sdp"
+        app:font_name="MontserratMedium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Do you want to delete it?" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_confirmation_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_confirmation_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="CANCEL"
+        android:padding="@dimen/_8sdp"
+        app:font_name="MontserratRegular"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gl_confirmation_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/tv_confirmation_message"/>
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_confirmation_proceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Remove"
+        android:textAllCaps="true"
+        android:padding="@dimen/_8sdp"
+        app:font_name="MontserratRegular"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gl_confirmation_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/tv_confirmation_message"/>
+</android.support.constraint.ConstraintLayout>

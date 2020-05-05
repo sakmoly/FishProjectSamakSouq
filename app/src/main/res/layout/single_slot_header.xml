@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/graylight"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_slot_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Payment Header"
+        android:padding="@dimen/_10sdp"
+        android:textSize="@dimen/_12sdp"
+        app:font_name="MontserratBold"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

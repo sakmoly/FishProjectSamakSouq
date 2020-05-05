@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/_4sdp"
+    android:paddingBottom="@dimen/_4sdp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <qa.happytots.yameenhome.components.YameenRadioButton
+        android:id="@+id/rb_slot_payment_option"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Cash on delivery"
+        android:theme="@style/YameenRadioButtonTheme"
+        android:padding="@dimen/_8sdp"
+        app:font_name="MontserratLight"
+        android:textSize="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:textColor="@android:color/black" />
+
+</android.support.constraint.ConstraintLayout>

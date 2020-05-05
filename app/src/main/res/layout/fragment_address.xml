@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.ui.fragment.AddressFragment">
+
+    <android.support.constraint.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:constraint_referenced_ids="delivery_address_bg, tv_delivery_address, tv_add_delivery_address" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_checkout_five"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.79" />
+
+    <View
+        android:id="@+id/delivery_address_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/graylight"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_delivery_address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_delivery_address" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_delivery_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:drawableStart="@drawable/ic_location"
+        android:drawablePadding="@dimen/_10sdp"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/label_delivery_address"
+        app:font_name="MontserratBold"
+        app:layout_constraintEnd_toStartOf="@id/gl_checkout_five"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_add_delivery_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_delivery_address_add"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        app:font_name="MontserratBold"
+        app:layout_constraintBottom_toBottomOf="@id/tv_delivery_address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gl_checkout_five"
+        app:layout_constraintTop_toTopOf="@+id/tv_delivery_address" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_delivery_address"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingTop="@dimen/_8sdp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_checkout_continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delivery_address_bg" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_address_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:font_name="MontserratLight"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_12sdp"
+        android:visibility="gone"
+        android:text="@string/label_empty_address"
+        app:layout_constraintBottom_toTopOf="@+id/tv_checkout_continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delivery_address_bg" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_checkout_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_ckeckout_total"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_cart_total"
+        android:gravity="center"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:textColor="@color/Black"
+        app:font_name="MontserratBold"
+        android:layout_margin="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gl_checkout_center"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Total SAR : 40" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_checkout_continue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_cart_checkout"
+        android:gravity="center"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:text="@string/label_cart_continue"
+        android:layout_margin="@dimen/_8sdp"
+        app:font_name="MontserratBold"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gl_checkout_center" />
+</android.support.constraint.ConstraintLayout>

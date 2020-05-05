@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_quick_view_sub"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="QuickView"
+        android:padding="@dimen/_16sdp"
+        android:textSize="@dimen/_16sdp"
+        android:textColor="@android:color/black"
+        app:font_name="MontserratMedium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gl_quick_view"/>
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_quick_view_sub_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="SAR 20"
+        app:font_name="MontserratMedium"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/tv_quick_view_sub"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_quick_view_sub"
+        app:layout_constraintStart_toEndOf="@+id/gl_quick_view"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_quick_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.70"/>
+
+</android.support.constraint.ConstraintLayout>

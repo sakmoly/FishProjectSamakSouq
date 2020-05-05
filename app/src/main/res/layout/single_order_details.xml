@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_8sdp">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_order_fish"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_160sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pic1" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_order_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingEnd="@dimen/_16sdp"
+        android:textAllCaps="true"
+        android:textColor="@color/Yellow"
+        android:textSize="@dimen/_14sdp"
+        app:font_name="MontserratLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="SAR" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_order_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Yellow"
+        android:textSize="@dimen/_12sdp"
+        app:font_name="MontserratLight"
+        app:layout_constraintEnd_toEndOf="@+id/tv_order_currency"
+        app:layout_constraintStart_toStartOf="@+id/tv_order_currency"
+        app:layout_constraintTop_toBottomOf="@+id/tv_order_currency"
+        tools:text="20.00" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_order_fish_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_16sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_12sdp"
+        app:font_name="MontserratMedium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_order_fish"
+        tools:text="Mathi" />
+
+</android.support.constraint.ConstraintLayout>

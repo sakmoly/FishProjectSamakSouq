@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_4sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_language_english"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_language_english"
+        android:textSize="@dimen/_12sdp"
+        android:padding="@dimen/_8sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:font_name="MontserratMedium"/>
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_language_arabic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_language_arabic"
+        android:textSize="@dimen/_12sdp"
+        android:padding="@dimen/_8sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_language_english"
+        app:layout_constraintStart_toStartOf="parent"
+        app:font_name="MontserratMedium"/>
+</android.support.constraint.ConstraintLayout>

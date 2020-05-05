@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/_8sdp"
+    android:paddingTop="@dimen/_8sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_transaction_status"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_margin="@dimen/_16sdp"
+        app:srcCompat="@drawable/ic_success_tick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_transaction_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_success_transaction"
+        app:font_name="MontserratSemiBold"
+        android:gravity="center"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/colorSuccessTransaction"
+        app:layout_constraintTop_toBottomOf="@+id/iv_transaction_status"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="@dimen/_8sdp"/>
+
+</android.support.constraint.ConstraintLayout>

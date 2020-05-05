@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_8sdp"
+    android:layout_marginEnd="@dimen/_8sdp"
+    android:background="@color/White"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_banner"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_200sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <qa.happytots.yameenhome.components.RoundedPagerIndicator
+        android:id="@+id/indicator_banner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        app:barWidth="@dimen/_16sdp"
+        app:barHeight="@dimen/_4sdp"
+        app:indicatorSpacing="@dimen/_4sdp"
+        app:autoScroll="true"
+        app:selectedRoundColor="@color/Yellow"
+        app:deselectedRoundColor="@color/gray"
+        app:layout_constraintTop_toBottomOf="@+id/pager_banner"
+        app:layout_constraintStart_toStartOf="@+id/pager_banner"
+        app:layout_constraintEnd_toEndOf="@+id/pager_banner" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,125 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="YameenAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/top_bar</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="OPTTheme" parent="YameenAppTheme">
+        <item name="android:windowBackground">@drawable/otp_bg</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/colorSplash</item>
+        <item name="colorPrimary">@color/appcolor</item>
+        <item name="colorPrimaryDark">@color/colorSplash</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="WelcomeTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/appcolor</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="LoginTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/black</item>
+        <item name="colorPrimaryDark">@color/lightYellow</item>
+        <item name="colorAccent">@android:color/black</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="YameenAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="YameenAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyTheme" parent="android:Theme.Holo.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@color/transparent</item>
+        <item name="android:bottomDark">@color/transparent</item>
+        <item name="android:bottomMedium">@color/transparent</item>
+        <item name="android:centerBright">@color/transparent</item>
+        <item name="android:centerDark">@color/transparent</item>
+        <item name="android:centerMedium">@color/transparent</item>
+        <item name="android:fullBright">@color/transparent</item>
+        <item name="android:fullDark">@color/transparent</item>
+        <item name="android:topBright">@color/transparent</item>
+        <item name="android:topDark">@color/transparent</item>
+    </style>
+
+    <style name="ToolbarTheme">
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+    <style name="DarkToolbarTheme">
+        <item name="colorControlNormal">@android:color/black</item>
+    </style>
+
+    <style name="RadioButtonTheme" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorRadioButtonSelected</item>
+        <item name="colorControlActivated">@color/colorRadioButtonSelected</item>
+    </style>
+
+    <color name="colorRadioButtonSelected">#00796b</color>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="StepView">
+        <item name="selectedCircleColor">#ffffff</item>
+        <item name="selectedCircleRadius">14dp</item>
+        <item name="selectedTextColor">#ffffff</item>
+        <item name="selectedStepNumberColor">#25448a</item>
+        <item name="stepNumberTextSize">12sp</item>
+        <item name="doneStepMarkColor">#25448a</item>
+        <item name="doneCircleColor">#ffffff</item>
+        <item name="doneCircleRadius">14dp</item>
+        <item name="doneTextColor">#40ffffff</item>
+        <item name="nextTextColor">#40ffffff</item>
+        <item name="nextStepLineColor">#26ffffff</item>
+        <item name="doneStepLineColor">#ffffff</item>
+        <item name="stepPadding">12dp</item>
+        <item name="textPadding">12dp</item>
+        <item name="stepLineWidth">0.5dp</item>
+        <item name="android:animationDuration">200</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="YameenRadioButtonTheme">
+        <item name="colorControlNormal">@color/gray</item>
+        <item name="colorControlActivated">@color/red</item>
+    </style>
+
+    <style name="CircularProgress">
+        <item name="colorAccent">@color/red</item>
+    </style>
+</resources>

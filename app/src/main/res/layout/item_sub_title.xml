@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<qa.happytots.yameenhome.components.YameenTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/all_fish_textview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="All Fishes"
+    android:paddingStart="@dimen/_8sdp"
+    android:paddingBottom="@dimen/_4sdp"
+    android:paddingTop="@dimen/_4sdp"
+    android:textSize="@dimen/_14sdp"
+    android:textColor="@color/Black"
+    android:textStyle="bold"
+    app:font_name="MontserratBold"
+    android:orientation="horizontal" />

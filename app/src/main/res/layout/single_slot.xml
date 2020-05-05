@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/_12sdp"
+    android:paddingBottom="@dimen/_12sdp">
+
+    <qa.happytots.yameenhome.components.SlotLayout
+        android:id="@+id/sl_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sl_second" />
+
+    <qa.happytots.yameenhome.components.SlotLayout
+        android:id="@+id/sl_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sl_first"
+        app:layout_constraintEnd_toStartOf="@+id/sl_third" />
+
+    <qa.happytots.yameenhome.components.SlotLayout
+        android:id="@+id/sl_third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sl_second"
+        app:layout_constraintEnd_toStartOf="@+id/sl_fourth" />
+
+    <qa.happytots.yameenhome.components.SlotLayout
+        android:id="@+id/sl_fourth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sl_third"
+        app:layout_constraintEnd_toStartOf="@+id/sl_fifth" />
+
+    <qa.happytots.yameenhome.components.SlotLayout
+        android:id="@+id/sl_fifth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sl_fourth"/>
+
+    <RadioGroup
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/sl_third">
+        <qa.happytots.yameenhome.components.YameenRadioButton
+            android:id="@+id/rb_slot_morning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_slot_morning"
+            android:textSize="@dimen/_9sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:font_name="MontserratRegular"
+            android:theme="@style/YameenRadioButtonTheme"
+            app:layout_constraintEnd_toStartOf="@+id/rb_slot_evening"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <qa.happytots.yameenhome.components.YameenRadioButton
+            android:id="@+id/rb_slot_evening"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textSize="@dimen/_9sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:text="@string/label_slot_evening"
+            app:font_name="MontserratRegular"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:theme="@style/YameenRadioButtonTheme"
+            app:layout_constraintStart_toEndOf="@+id/rb_slot_morning"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <!--<qa.happytots.yameenhome.components.YameenRadioButton-->
+            <!--android:id="@+id/rb_slot_express"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="0.6"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/_8sdp"-->
+            <!--app:font_name="MontserratRegular"-->
+            <!--android:textSize="@dimen/_9sdp"-->
+            <!--android:theme="@style/YameenRadioButtonTheme"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/rb_slot_morning"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--android:text="@string/label_slot_express"/>-->
+    </RadioGroup>
+
+
+</android.support.constraint.ConstraintLayout>

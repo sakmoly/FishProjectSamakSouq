@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/_4sdp"
+    android:paddingBottom="@dimen/_4sdp">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_fish_photo"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_160sdp"
+        android:src="@drawable/image4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/iv_fish_discount_ribbon"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gl_fish_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_fish_photo"
+        app:srcCompat="@drawable/ic_discount_ribbon"/>
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_fish_ribbon_discount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:font_name="MontserratBold"
+        android:text="15% Offer"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_9sdp"
+        android:paddingStart="@dimen/_24sdp"
+        app:layout_constraintTop_toTopOf="@+id/iv_fish_discount_ribbon"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_fish_discount_ribbon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gl_fish_vertical"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/gl_fish_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <android.support.constraint.Group
+        android:id="@+id/gp_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="tv_fish_name, tv_fish_offer_price" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_fish_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:maxLines="2"
+        android:paddingStart="@dimen/_12sdp"
+        android:singleLine="false"
+        android:textAllCaps="true"
+        android:textSize="@dimen/_11sdp"
+        app:font_name="MontserratMedium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_fish_photo"
+        tools:text="MATHI/PEDVEY" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_fish_offer_price_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:paddingTop="@dimen/_4sdp"
+        android:text="From SAR"
+        android:textColor="@color/Yellow"
+        android:textSize="@dimen/_8sdp"
+        app:font_name="MontserratLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <qa.happytots.yameenhome.components.YameenTextView
+        android:id="@+id/tv_fish_offer_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:textColor="@color/Yellow"
+        android:textSize="@dimen/_14sdp"
+        android:maxLines="1"
+        app:font_name="MontserratLight"
+        app:layout_constraintEnd_toEndOf="@+id/tv_fish_offer_price_text"
+        app:layout_constraintStart_toStartOf="@+id/tv_fish_offer_price_text"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fish_offer_price_text"
+        tools:text="250" />
+
+</android.support.constraint.ConstraintLayout>
